@@ -50,6 +50,7 @@ Events.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
+        feature/server
         modelName: 'Events'
     }
 )
