@@ -6,7 +6,7 @@ class Events extends Model {
 }
 
 Events.init(
-   {
+    {
         id: {
             type: Datatypes.INTEGER,
             allowNull: false,
@@ -45,6 +45,12 @@ Events.init(
                 key: 'id'
             }
         }
+    },
+    {
+        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'Events'
     }
 )
 
