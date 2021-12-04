@@ -15,3 +15,19 @@ Current plans for future development include
 - More areas for exploration
 - Ticket purchasing on site
 - Spotify Embeded music player
+
+### Dependencies
+- Express
+- Express-handlebars
+- Sequalize
+- MySQL2
+- becrypt
+- date-fns
+
+### Technologies and Languages used
+- Node.js
+- Javascript
+- SQL
+- HTML
+- CSS
+- date-fns
