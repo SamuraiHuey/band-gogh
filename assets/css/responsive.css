@@ -61,14 +61,14 @@ Author URI: http://www.bootstrapthemes.co
     .main-nav {
         height: auto;
     }
-    .single_news_right_content {
+    .single_events_right_content {
         padding: 0px 15px;
     }
-    .single_news_right_content .single_right_content {
+    .single_events_right_content .single_right_content {
         height: 112px;
     }  
 
-    .single_news_right_content{
+    .single_events_right_content{
         margin-bottom: 86px;
         max-width: 100%;
         float: none;

@@ -391,7 +391,7 @@ Button
     background-color: #043c4f;	
 }
 
-.btn_news_color{
+.btn_events_color{
     color:#ab987a;
     border-color: #ab987a;
 }
@@ -880,24 +880,24 @@ input::-ms-input-placeholder {
 }
 
 
-/*news section css*/
-.news{}
-.single_news_right_content
-.main_news_content_area{
+/*events section css*/
+.events{}
+.single_events_right_content
+.main_events_content_area{
     overflow: hidden;
 }
 
-.single_news_content_left{
+.single_events_content_left{
     background: #fff;
     margin-bottom:20px;
 }
 
-.news_content_left_thumbnail img{
+.events_content_left_thumbnail img{
     width:100%;
     height: 185px;
 }
 
-.news_content_left_content{
+.events_content_left_content{
     padding: 30px 20px 20px 20px;  
 }
 p.subtitle{
@@ -910,19 +910,19 @@ p.subtitle{
     overflow: hidden;
     width:100%;
 }
-/*.bottom_btn_area_content a.news_icon{
+/*.bottom_btn_area_content a.events_icon{
   float:left;
   display: inline-block;
   width:90%;
   
 }
-.bottom_btn_area_content a.news_right_icon{
+.bottom_btn_area_content a.events_right_icon{
   float:right;
   width:10%;
   display: inline-block;
   
 }*/
-a.news_icon{
+a.events_icon{
     text-transform: uppercase;
     color:#AB987A;
     font-family: 'robotoregular';
@@ -932,28 +932,28 @@ a i{
     margin-right: 10px;
 }
 
-.single_news_right_content{
+.single_events_right_content{
     margin-bottom: 86px;
     max-width: 98%;
     float: right;
 }
-.single_news_right_content .single_right_img img{
+.single_events_right_content .single_right_img img{
     width:100%;
     height: 112px;
 }
-.single_news_right_content .single_right_content{
+.single_events_right_content .single_right_content{
     background: #fff;
     padding: 10px 15px 10px 25px;
 }
 
-.single_news_right_content .single_icon_area .single_icon_content{
+.single_events_right_content .single_icon_area .single_icon_content{
     background: #ab987a;
     color:#fff;
     height: 56px;
     padding: 5px;
 
 }
-.single_news_right_content .single_icon_area .single_icon_content_calander{
+.single_events_right_content .single_icon_area .single_icon_content_calander{
     background: #032f3e;
     color:#fff;
 }
@@ -1052,14 +1052,14 @@ a i{
     line-height: 1.325rem;
 }
 
-.single_widget li.single_latest_news{
+.single_widget li.single_latest_events{
     margin-bottom: 20px;
 }
-.single_widget li.single_latest_news p{
+.single_widget li.single_latest_events p{
     line-height: 1.125rem;
     margin-bottom:5px;
 }
-.single_widget li.single_latest_news p.latest_date{
+.single_widget li.single_latest_events p.latest_date{
     color:#ab987a;
 }
 
