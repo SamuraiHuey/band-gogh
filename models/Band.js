@@ -1,5 +1,5 @@
-const { Model, Datatypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connections');
 const bcrypt = require('bcrypt');
 
 class Band extends Model {
@@ -11,24 +11,24 @@ class Band extends Model {
 Band.init(
     {
         id: {
-            type: Datatypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
         band_name: {
-            type: Datatypes.STRING(75),
+            type: DataTypes.STRING(75),
             allowNull: false
         },
         band_website: {
-            type: Datatypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 isURL: true
             }
         },
         genre_name: {
-            type: Datatypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
         username: {

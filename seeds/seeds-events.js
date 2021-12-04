@@ -1,5 +1,5 @@
 const sequelize = require('../config/connections');
-const {events} = require('../models');
+const { Events } = require('../models');
 
 const events = [
   {
@@ -104,5 +104,5 @@ const events = [
   },
 ];
 
-const seedEvents = () => User.bulkCreate(events, {individualHooks: true});
+const seedEvents = () => User.bulkCreate(Events, {individualHooks: true});
 module.exports = seedEvents;
