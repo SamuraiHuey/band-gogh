@@ -27,6 +27,10 @@ Band.init(
                 isURL: true
             }
         },
+        genre_name: {
+            type: Datatypes.STRING,
+            allowNull: false
+        },
         username: {
             type: DataTypes.STRING,
             allowNull: false
@@ -38,7 +42,6 @@ Band.init(
             validate: {
                 isEmail: true
             }
-
         },
         password: {
             type: DataTypes.STRING,

@@ -41,7 +41,7 @@ Events.init(
         },
         event_genres: {
             references: {
-                model: 'genre',
+                model: 'Band',
                 key: 'id'
             }
         }
