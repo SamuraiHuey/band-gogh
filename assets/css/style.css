@@ -678,29 +678,29 @@ input::-ms-input-placeholder {
 
 /*bands section css*/
 .bands{
-    background: url(../images/lessonbg.jpg) no-repeat top right #032F3E;
+    background: url(../images/bandsbg.jpg) no-repeat top right #032F3E;
     overflow: hidden;
     background-size: contain;
 }
 .main_bands{
 
 }
-.lesson_title{}
-.lesson_title h1{
+.bands_title{}
+.bands_title h1{
     text-transform: uppercase;
     line-height: 4.5rem;
     letter-spacing: 2px;
     margin-bottom: 20px;
 
 }
-.lesson_title p{
+.bands_title p{
     font-size:4.375rem;
     line-height: 4.5rem;
     margin-bottom:50px;
     color:#fff;
     font-family: 'latolight';
 }
-.lesson_content{}
+.bands_content{}
 .bandsborder{
     position: relative;
 }
@@ -714,12 +714,12 @@ input::-ms-input-placeholder {
     height: 90%;
 }
 
-.lesson_content ul li{
+.bands_content ul li{
     margin-bottom: 90px;
     max-width: 70%;
     line-height: 30px;
 }
-.lesson_content ul li i{
+.bands_content ul li i{
     font-size: 40px;
     color: #AB987A;
     background: #032F3E;
@@ -728,7 +728,7 @@ input::-ms-input-placeholder {
     line-height: 60px;
     position: relative;
 }
-.lesson_content ul li a{
+.bands_content ul li a{
     font-size: 1.125rem;
     font-family: 'robotobold';
     color: #fff;
