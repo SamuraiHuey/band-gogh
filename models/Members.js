@@ -1,5 +1,5 @@
-const { Model, Datatypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connections');
 
 class Members extends Model {
 
@@ -8,19 +8,27 @@ class Members extends Model {
 Members.init(
     {
         id: {
-            type: Datatypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
         members_name: {
-            type: Datatypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
 
-        event_genres: {
+        member_instrument: {
+            type: DataTypes.INTEGER,
             references: {
                 model: 'Instruments',
+                key: 'id'
+            }
+        },
+        member_band: {
+            type: DataTypes.INTEGER,
+            reference: {
+                model: 'Band',
                 key: 'id'
             }
         }

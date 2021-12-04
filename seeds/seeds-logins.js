@@ -1,5 +1,5 @@
-const sequelize = require('../config/connections');
-const {logins} = require('../models');
+// const sequelize = require('../config/connections');
+const { Band } = require('../models');
 
 const logins = [
   {
@@ -94,6 +94,6 @@ const logins = [
   }
 ];
 
-const seedLogins = () => User.bulkCreate(logins, {individualHooks: true});
+const seedLogins = () => Band.bulkCreate(logins, {individualHooks: true});
 
 module.exports = seedLogins;
