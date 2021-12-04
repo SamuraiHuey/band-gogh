@@ -20,7 +20,7 @@ Members.init(
 
         event_genres: {
             references: {
-                model: 'Instrument',
+                model: 'Instruments',
                 key: 'id'
             }
         }
