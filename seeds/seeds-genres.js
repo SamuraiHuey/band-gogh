@@ -3,10 +3,9 @@ const {genre} = require('../models');
 
 const genre = [
   {
-    id: '001',
+    genre_events:'001',
     genre_name: 'Rock',
     genre_bands:'Gwar',
-    genre_events: '',
     band_name: 'Gwar',
     band_website: 'https://gwar.net/',
     username: 'gwar1984',
