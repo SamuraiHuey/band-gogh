@@ -22,10 +22,6 @@ app.use(express.static(path.join(__dirname, "public")))
 //     res.sendFile(path.join(__dirname, 'public/index.html'));
 //   });
 
-app.get('/', (req, res) =>{
-  res.render('home');
-});
-
 app.get('/signup', (req, res) =>{
   res.render('signup');
 });
@@ -36,6 +32,14 @@ app.get('/events', (req, res) =>{
 
 app.get('/genres', (req, res) =>{
   res.render('genres');
+});
+
+app.get('/post', (req, res) =>{
+  res.render('post');
+});
+
+app.get('*', (req, res) =>{
+  res.render('home');
 });
 
 sequelize.sync({ force: false }).then(() => {
