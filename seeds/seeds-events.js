@@ -92,5 +92,5 @@ const events = [
   },
 ];
 
-const seedEvents = () => Events.bulkCreate(Events, { individualHooks: true });
+const seedEvents = () => Events.bulkCreate(events, { individualHooks: true });
 module.exports = seedEvents;
