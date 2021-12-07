@@ -1,4 +1,4 @@
-const sequelize = require('../config/connections');
+// const sequelize = require('../config/connections');
 const { Events } = require('../models');
 
 const events = [
