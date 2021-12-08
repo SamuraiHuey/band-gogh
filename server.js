@@ -2,9 +2,6 @@ const path = require('path');
 const express = require('express');
 // const routes = require('./routes');
 const sequelize = require('./config/connection');
-<<<<<<< HEAD
-// const { engine } = require("express-handlebars");
-=======
 const { engine } = require("express-handlebars");
 
 // const session = require('express-session');
@@ -22,20 +19,14 @@ const { engine } = require("express-handlebars");
 // };
 
 // app.use(session(sess));
->>>>>>> experiment/handlebars
 
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-<<<<<<< HEAD
-// app.engine("handlebars", engine({ defaultLayout: "main" }));
-// app.set('view engine', 'handlebars');
-=======
 
 app.engine("handlebars", engine({ defaultLayout: "main" }));
 app.set('view engine', 'handlebars');
->>>>>>> experiment/handlebars
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
