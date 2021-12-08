@@ -3,15 +3,6 @@
   "version": "1.0.0",
   "description": "Band-Gogh is a public platform intended to allow small local muscians in the Richmond,Virginia area (and potentially more in the future) to reach new potential listeners who are wanting to discover new, local music.",
   "main": "server.js",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "date-fns": "^2.27.0",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^6.0.2",
-    "mysql2": "^2.3.3",
-    "sequelize": "^6.12.0-alpha.1"
-  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/SamuraiHuey/band-gogh/issues"
   },
-  "homepage": "https://github.com/SamuraiHuey/band-gogh#readme"
+  "homepage": "https://github.com/SamuraiHuey/band-gogh#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "date-fns": "^2.27.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-alpha.1"
+  }
 }

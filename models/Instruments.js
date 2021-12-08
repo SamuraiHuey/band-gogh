@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connections');
+const sequelize = require('../config/connection');
 
 class Instruments extends Model {
 
@@ -16,14 +16,7 @@ Instruments.init(
         instrument_name: {
             type: DataTypes.STRING,
             allowNull: false
-        },
-        instrument_players: {
-            type: DataTypes.INTEGER,
-            reference: {
-                model: 'Band',
-                key: ''
-            }
-        },
+        }
     },
     {
         sequelize,

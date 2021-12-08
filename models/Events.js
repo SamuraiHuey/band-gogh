@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connections');
+const sequelize = require('../config/connection');
 
 class Events extends Model {
 
@@ -36,13 +36,6 @@ Events.init(
         event_bands: {
             type: DataTypes.INTEGER,
             reference: {
-                model: 'Band',
-                key: 'id'
-            }
-        },
-        event_genres: {
-            type: DataTypes.INTEGER,
-            references: {
                 model: 'Band',
                 key: 'id'
             }
