@@ -2,40 +2,29 @@ const path = require('path');
 const express = require('express');
 // const routes = require('./routes');
 const sequelize = require('./config/connection');
-<<<<<<< HEAD
-// const { engine } = require("express-handlebars");
-=======
 const { engine } = require("express-handlebars");
 
-// const session = require('express-session');
+const session = require('express-session');
 
-// const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-// const sess = {
-//   secret: 'Super secret secret',
-//   cookie: {},
-//   resave: false,
-//   saveUninitialized: true,
-//   store: new SequelizeStore({
-//     db: sequelize
-//   })
-// };
-
-// app.use(session(sess));
->>>>>>> experiment/handlebars
-
+const sess = {
+  secret: 'Super secret secret',
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
+};
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-<<<<<<< HEAD
-// app.engine("handlebars", engine({ defaultLayout: "main" }));
-// app.set('view engine', 'handlebars');
-=======
+app.use(session(sess));
 
 app.engine("handlebars", engine({ defaultLayout: "main" }));
 app.set('view engine', 'handlebars');
->>>>>>> experiment/handlebars
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
