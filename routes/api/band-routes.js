@@ -73,11 +73,11 @@ router.post('/', (req, res) => {
 router.post('/login', (req, res) => {
     Band.findOne({
         where: {
-            email: req.body.email
+            username: req.body.username
         }
     }).then(dbBandData => {
         if (!dbBandData) {
-            res.status(400).json({ message: 'No user with that email'});
+            res.status(400).json({ message: 'No user with that username'});
             return;
         }
 
@@ -100,7 +100,18 @@ router.post('/login', (req, res) => {
         console.log(err);
         res.status(500).json(err);
     });
-})
+});
+
+router.post('/logout', (req, res) => {
+    if (req.session.loggedIn) {
+        req.session.destroy(() => {
+            res.status(204).end();
+        });
+    }
+    else {
+        res.status(404).end();
+    }
+});
 
 router.put('/:id'), (req, res) => {
 
