@@ -1,0 +1,201 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Band Gogh</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+        <link rel="stylesheet" href="assets/css/navmenu/styles.css">
+        <link rel="stylesheet" href="assets/css/portfolio.jquery.css">
+        <link rel="stylesheet" href="assets/css/fonticons.css">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="container">
+                <div class="nav-top clearfix">
+                    <div class="logo">
+                        <a  href="" class="navbar-brand"><img src="assets/images/logo.png" alt="Logo" /></a>
+                    </div>
+
+                    <div class="head_top_social pull-right">
+                        <ul class="list-inline">
+                            <li><a href=""><i class="fa fa-phone"></i>804 123 4567</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                        <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="main-nav navbar-collapse collapse">
+                <div class="container">
+                    <div class="minilogo">
+                        <a  href="" class="navbar-brand"><img src="assets/images/logo2.png" alt="Logo" /></a>
+                    </div>
+                    <ul class="nav nav-justified">
+                        <li><a class="active" href="#home">HOME</a></li>
+                        <li><a href="#service">ABOUT US</a></li>
+                        <li><a href="#bands">BANDS</a></li>
+                        <li><a href="#genre">GENRES</a></li>
+                        <li><a href="#events">EVENTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="events" class="events">
+            <div class="container">
+                <div class="row">
+                    <div class="main_events sections">
+                        <div class="head_title text-center">
+                            <h2>UPCOMING EVENTS</h2>
+                            <div class="separator"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in egestas lectus. 
+                                Etiam tempor odio tellus, at bibendum neque faucibus quis. 
+                                Sed vel facilisis elit. Nullam fringilla pharetra diam non accumsan. 
+                                Morbi eget aliquam mauris. Etiam vehicula efficitur mi.</p>
+                        </div>
+
+
+                        <div class="main_events_content_area">
+                            <div class="main_events_content">
+                                <div class="col-sm-5 ">
+                                    <div class="single_events_content_left">
+                                        <div class="events_content_left_thumbnail">
+                                            <img src="assets/images/events1.jpg" alt="" />
+                                        </div>
+                                        <div class="events_content_left_content">
+                                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet, consectetur adipiscing.</p>
+                                            <div class="separator2"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis elit et elit interdum semper vel nec diam. 
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis elit et elit interdum semper vel nec diam. 
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+                                            <div class="events_content_left_bottom">
+                                                <a class="events_icon" href=""><i class="fa fa-folder"></i>guitar bands</a>
+                                                <a href="" class="events_right_icon"><i class="fa fa-folder"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 col-xs-12">
+                                    <div class="events_right_content">
+                                        <div class="single_events_right_content">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-xs-3 no-padding">
+                                                    <div class="single_right_img">
+                                                        <img src="assets/images/events1.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-8 col-xs-8 no-padding">
+                                                    <div class="single_right_content">
+                                                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <a class="events_icon" href=""><i class="fa fa-folder"></i>guitar bands</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-1 col-xs-1 no-padding">
+                                                    <div class="single_icon_area text-center">
+                                                        <div class="single_icon_content">
+                                                            <i class="fa fa-comments"></i>
+                                                            <p href="">16</p>
+                                                        </div>
+                                                        <div class="single_icon_content single_icon_content_calander">
+                                                            <i class="fa fa-calendar"></i>
+                                                            <p href="">1/6</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_events_right_content">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-xs-3 no-padding">
+                                                    <div class="single_right_img">
+                                                        <img src="assets/images/events1.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-8 col-xs-8 no-padding">
+                                                    <div class="single_right_content">
+                                                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <a class="events_icon" href=""><i class="fa fa-folder"></i>guitar bands</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-1 col-xs-1 no-padding">
+                                                    <div class="single_icon_area text-center">
+                                                        <div class="single_icon_content">
+                                                            <i class="fa fa-comments"></i>
+                                                            <p href="">16</p>
+                                                        </div>
+                                                        <div class="single_icon_content single_icon_content_calander">
+                                                            <i class="fa fa-calendar"></i>
+                                                            <p href="">1/6</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_events_right_content">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-xs-3 no-padding">
+                                                    <div class="single_right_img">
+                                                        <img src="assets/images/events1.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-8 col-xs-8 no-padding">
+                                                    <div class="single_right_content">
+                                                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <a class="events_icon" href=""><i class="fa fa-folder"></i>guitar bands</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-1 col-xs-1 no-padding">
+                                                    <div class="single_icon_area text-center">
+                                                        <div class="single_icon_content">
+                                                            <i class="fa fa-comments"></i>
+                                                            <p href="">16</p>
+                                                        </div>
+                                                        <div class="single_icon_content single_icon_content_calander">
+                                                            <i class="fa fa-calendar"></i>
+                                                            <p href="">1/6</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_btn_area_content text-center">
+                            <a href="" class="btn btn-larg btn_events_color">ALL ARTICLES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
