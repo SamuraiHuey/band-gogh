@@ -1,4 +1,4 @@
-const { Model, Datatypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Genres extends Model {
@@ -8,22 +8,24 @@ class Genres extends Model {
 Genres.init(
     {
         id: {
-            type: Datatypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
         genre_name: {
-            type: Datatypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
         genre_bands: {
+            type: DataTypes.INTEGER,
             reference: {
                 model: 'Band',
                 key: 'id'
             }
         },
         genre_events: {
+            type: DataTypes.INTEGER,
             references: {
                 model: 'events',
                 key: 'id'
@@ -38,4 +40,4 @@ Genres.init(
     }
 )
 
-module.exports = Genre;
+module.exports = Genres;
