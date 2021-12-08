@@ -56,13 +56,51 @@ router.post('/', (req, res) => {
         password: req.body.password
     })
     .then(dbBandData => {
-        res.json(dbBandData);
+        req.session.save(() => {
+            req.session.user_id = dbBandData.id
+            req.session.band_name = dbBandData.band_name
+            req.session.loggedIn = true;
+
+        res.json({ user: dbBandData, message: 'You are now logged In'});
+        });
     })
     .catch(err => {
         console.log(err);
         res.status(500).json(err);
     });
 });
+
+router.post('/login', (req, res) => {
+    Band.findOne({
+        where: {
+            email: req.body.email
+        }
+    }).then(dbBandData => {
+        if (!dbBandData) {
+            res.status(400).json({ message: 'No user with that email'});
+            return;
+        }
+
+        validPassword = dbBandData.checkPassword(req.body.password);
+
+        if (!validPassword) {
+            res.status(400).json({ message: 'Incorrect password!'});
+            return;
+        }
+
+        req.session.save(() => {
+            req.session.user_id = dbBandData.id;
+            req.session.band_name = dbBandData.band_name;
+            req.session.loggedIn = true;
+
+            req.json({ user: dbBandData, message: 'You are not logged in' });
+        });
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+})
 
 router.put('/:id'), (req, res) => {
 
