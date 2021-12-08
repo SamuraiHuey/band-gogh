@@ -1,18 +1,30 @@
 {{#if loggedIn}}
 
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
-<p>IF YOU CAN READ THIS, YOU ARE LOGGED IN</p>
+<head>
+  <title>Event Submission Form</title>
+  <div id="event-submission">
+    <form id="event-submission-form" method="POST" action="">
+      <!-- Form contents will go here -->
+      <fieldset>
+        <h3>Event Information</h3>
+        <label for="event-name">Event Name</label>
+        <input type="text" id="event-name" name="event-name" />
+        <label for="event-month">Month</label>
+        <input type="text" id="event-month" name="event-month" />
+        <label for="event-day">Day</label>
+        <input type="text" id="event-day" name="event-day" />
+        <label for="event-year">Year</label>
+        <input type="text" id="event-year" name="event-year" />
+        <label for="event-location">City</label>
+        <input type="text" id="event-location" name="event-location" />
+        <label for="event-bands">Participating Band(s)</label>
+        <input type="text" id="event-bands" name="event-bands" />
+        <label for="event-genres">Genre</label>
+        <input type="text" id="event-genre" name="event-genre" />
+    </fieldset>
+      <button type="button">Submit Form</button>
+  </div>
+</head>
 
 {{else}}
 
