@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Band, Events, Members } = require('../../models');
+const { Band, Events, Members } = require('../models');
 
-router.get('/', (req, res) => {
+router.get('/post', (req, res) => {
     Band.findAll({
         attributes: {
             exclude: ['password']
@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     })
     .then(dbBandData => {
         const posts = dbBandData.map(band => band.get({ plain: true }));
-        res,render('post', {
+        res.render('post', {
             posts,
             loggedIn: req.session.loggedIn
         });
@@ -20,3 +20,5 @@ router.get('/', (req, res) => {
         res.status(500).json(err);
     });
 });
+
+module.exports = router;
