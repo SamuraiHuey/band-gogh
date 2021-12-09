@@ -27,10 +27,10 @@ router.get('/:id', (req, res) => {
                 model: Events,
                 attributes: ['event_name', 'event_month', 'event_day', 'event_year', 'event_location']
             },
-            {
-                model: Members,
-                attributes: ['members_name']
-            }
+            // {
+            //     model: Members,
+            //     attributes: ['members_name']
+            // }
         ]
     })
     .then(dbBandData => {
@@ -93,7 +93,7 @@ router.post('/login', (req, res) => {
             req.session.band_name = dbBandData.band_name;
             req.session.loggedIn = true;
 
-            req.json({ user: dbBandData, message: 'You are not logged in' });
+            res.json({ user: dbBandData, message: 'You are now logged in' });
         });
     })
     .catch(err => {
