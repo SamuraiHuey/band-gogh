@@ -39,13 +39,6 @@ Events.init(
                 model: 'Band',
                 key: 'id'
             }
-        },
-        event_genres: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'Band',
-                key: 'id'
-            }
         }
     },
     {
