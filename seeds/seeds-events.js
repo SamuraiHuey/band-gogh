@@ -13,7 +13,7 @@ const events = [
   {
     event_name: 'Carbon Leaf Concert',
     event_month: 'December',
-    event_day: '11',
+    event_day: '23',
     event_year: '2021',
     event_location: 'Richmond',
    
@@ -22,7 +22,7 @@ const events = [
 
     event_name: 'Pat McGee Concert',
     event_month: 'December',
-    event_day: '11',
+    event_day: '19',
     event_year: '2021',
     event_location: 'Richmond',
    
@@ -31,7 +31,7 @@ const events = [
 
     event_name: 'River City High Concert',
     event_month: 'December',
-    event_day: '11',
+    event_day: '30',
     event_year: '2021',
     event_location: 'Richmond',
    
@@ -39,18 +39,18 @@ const events = [
   {
 
     event_name: 'Cannabis Corpse Concert',
-    event_month: 'December',
-    event_day: '11',
-    event_year: '2021',
+    event_month: 'January',
+    event_day: '10',
+    event_year: '2022',
     event_location: 'Richmond',
    
   },
   {
 
     event_name: 'Sparklehorse Concert',
-    event_month: 'December',
+    event_month: 'January',
     event_day: '11',
-    event_year: '2021',
+    event_year: '2022',
     event_location: 'Richmond',
    
   },
