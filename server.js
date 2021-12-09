@@ -44,9 +44,9 @@ app.get('/genres', (req, res) =>{
   res.render('genres');
 });
 
-app.get('/post', (req, res) =>{
-  res.render('post');
-});
+// app.get('/post', (req, res) =>{
+//   res.render('post');
+// });
 
 app.get('*', (req, res) =>{
   res.render('home');
