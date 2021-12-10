@@ -102,6 +102,28 @@ router.get('/genres', (req, res) => {
     });
 });
 
+router.get('/signup', (req, res) => {
+    Events.findAll({
+        include: [
+            {
+                model: Band,
+                attributes: [ 'band_name', 'genre_name']
+            }
+        ]
+    })
+    .then(dbEventData => {
+        const events = dbEventData.map(event => event.get({ plain: true }));
+        res.render('signup', {
+            events,
+            loggedIn: req.session.loggedIn
+        });
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
 router.get('/contact', (req, res) => {
     Band.findAll({
         attributes: {
