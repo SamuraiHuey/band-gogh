@@ -71,9 +71,9 @@ router.get('/events', (req, res) => {
         }
     })
     .then(dbBandData => {
-        const posts = dbBandData.map(band => band.get({ plain: true }));
+        const events = dbBandData.map(band => band.get({ plain: true }));
         res.render('events', {
-            posts,
+            events,
             loggedIn: req.session.loggedIn
         });
     })

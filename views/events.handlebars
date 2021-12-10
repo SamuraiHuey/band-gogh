@@ -1,19 +1,49 @@
 <section id="events" class="events">
-            <div class="container">
-                <div class="row">
-                    <div class="main_events sections">
-                        <div class="head_title text-center">
-                            <p>-----------</p>
-                            <p>-----------</p>
-                            <h2>UPCOMING CONCERTS</h2>
-                            <div class="separator"></div>
-                            <p><strong>Check out what shows are coming up in the Richmond area!</strong></p>
-                            <div>{{events.event_name}}</div>
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="main_events sections">
+                <div class="head_title text-center">
+                    <p>-----------</p>
+                    <p>-----------</p>
+                    <h2>UPCOMING CONCERTS</h2>
+                    <div class="separator"></div>
+                    <p><strong>Check out what shows are coming up in the Richmond area!</strong></p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-7 col-xs-12">
+                            <div class="events_right_content">
+                                <div class="single_events_right_content">
+                                    {{#each events as |event|}}
+                                    <div class="row mx-auto">
+                                        <div class="col-sm-3 col-xs-3 no-padding">
+                                            <div class="single_left_img">
+                                                <img src="assets/images/music-note-vector-icon.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-7 col-xs-7 no-padding">
+                                            <div class="single_right_content">
+                                                <p class="subtitle">{{event.event_name}}</p>
+                                                <a class="events_icon" href=""><i class="fa fa-folder"></i>{{event.event_bands.genre_name}}</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 col-xs-2 no-padding">
+                                            <div class="single_icon_area text-center">
+                                                <div class="single_icon_content">
+                                                    <i class="fa fa-comments"></i>
+                                                    <p href="">{{event.event_month}}/{{event.event_day}}</p>
+                                                </div>
+                                                <div class="single_icon_content single_icon_content_calander">
+                                                    <i class="fa fa-calendar"></i>
+                                                    <p href="">{{event.event_year}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{/each}}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-
+        </div>
+</section>
