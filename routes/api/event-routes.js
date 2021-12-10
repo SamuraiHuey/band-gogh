@@ -57,7 +57,7 @@ router.post('/', (req, res) => {
         event_day: req.body.event_day,
         event_year: req.body.event_year,
         event_location: req.body.event_location,
-        event_bands: req.body.event_bands
+        event_bands: req.session.user_id
     })
     .then(dbEventsData => res.json(dbEventsData))
     .catch(err => {

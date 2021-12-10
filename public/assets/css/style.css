@@ -19,6 +19,10 @@ body {
     font-family: 'latolight';
     font-weight: 300;
 }
+.hidden{
+    display: none;
+}
+
 .preloader {
     position: fixed;
     top: 0;

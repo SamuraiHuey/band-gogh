@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { response } = require('express');
 const sequelize = require('../config/connection');
 const { Band, Events, Members } = require('../models');
 
@@ -21,16 +22,19 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/signup', (req, res) => {
-    Band.findAll({
-        attributes: {
-            exclude: ['password']
-        }
+router.get('/events', (req, res) => {
+    Events.findAll({
+        include: [
+            {
+                model: Band,
+                attributes: [ 'band_name', 'genre_name']
+            }
+        ]
     })
-    .then(dbBandData => {
-        const posts = dbBandData.map(band => band.get({ plain: true }));
-        res.render('signup', {
-            posts,
+    .then(dbEventData => {
+        const events = dbEventData.map(event => event.get({ plain: true }));
+        res.render('events', {
+            events,
             loggedIn: req.session.loggedIn
         });
     })
@@ -39,6 +43,7 @@ router.get('/signup', (req, res) => {
         res.status(500).json(err);
     });
 });
+
 
 router.get('/post', (req, res) => {
     Band.findAll({
@@ -66,9 +71,9 @@ router.get('/events', (req, res) => {
         }
     })
     .then(dbBandData => {
-        const posts = dbBandData.map(band => band.get({ plain: true }));
+        const events = dbBandData.map(band => band.get({ plain: true }));
         res.render('events', {
-            posts,
+            events,
             loggedIn: req.session.loggedIn
         });
     })
@@ -88,6 +93,28 @@ router.get('/genres', (req, res) => {
         const posts = dbBandData.map(band => band.get({ plain: true }));
         res.render('genres', {
             posts,
+            loggedIn: req.session.loggedIn
+        });
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+router.get('/signup', (req, res) => {
+    Events.findAll({
+        include: [
+            {
+                model: Band,
+                attributes: [ 'band_name', 'genre_name']
+            }
+        ]
+    })
+    .then(dbEventData => {
+        const events = dbEventData.map(event => event.get({ plain: true }));
+        res.render('signup', {
+            events,
             loggedIn: req.session.loggedIn
         });
     })
