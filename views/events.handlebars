@@ -14,7 +14,7 @@
                         var ticker = setInterval(clock, 1000);
                         
                         function clock() {
-                            var date = dayjs().format('DD/MM/YYYY hh:mm:ssA');
+                            var date = dayjs().format('MM/DD/YYYY hh:mm:ssA');
                             document.getElementById("currentDay").innerHTML = "Current date: " + date
                         };
                         clock()
