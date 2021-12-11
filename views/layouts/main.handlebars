@@ -63,7 +63,11 @@
                     </div>
                     <ul class="nav nav-justified">
                         <li><a class="active" href="/">HOME</a></li>
+                        {{#if loggedIn}}
+                        <li><a><button id='logout' class='btn'>LOGOUT</button></a></li>
+                        {{else}}
                         <li><a href="signup">SIGNUP/LOGIN</a></li>
+                        {{/if}}
                         <li><a href="post">POST</a></li>
                         <li><a href="events">EVENTS</a></li>
                         <li><a href="genres">GENRES</a></li>
