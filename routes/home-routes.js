@@ -24,6 +24,7 @@ router.get('/', (req, res) => {
 
 router.get('/events', (req, res) => {
     Events.findAll({
+        order: [Events, 'createdAt', 'DESC'],
         include: [
             {
                 model: Band,
