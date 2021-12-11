@@ -29,6 +29,9 @@ router.get('/events', (req, res) => {
                 model: Band,
                 attributes: [ 'band_name', 'genre_name']
             }
+        ],
+        order: [
+            ['created_at', 'DESC'],
         ]
     })
     .then(dbEventData => {
