@@ -18,6 +18,9 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
+
+
         <!--For Plugins external css-->
         <link rel="stylesheet" href="assets/css/plugins.css" />
 
@@ -61,7 +64,11 @@
                     </div>
                     <ul class="nav nav-justified">
                         <li><a class="active" href="/">HOME</a></li>
+                        {{#if loggedIn}}
+                        <li><a><button id='logout' class='btn'>LOGOUT</button></a></li>
+                        {{else}}
                         <li><a href="signup">SIGNUP/LOGIN</a></li>
+                        {{/if}}
                         <li><a href="post">POST</a></li>
                         <li><a href="events">EVENTS</a></li>
                         <li><a href="genres">GENRES</a></li>
@@ -135,6 +142,11 @@
             </div>
         </section>
 
+         {{#if loggedIn}}
+
+        <script src="javascript\logout.js"></script>
+
+        {{/if}}
 
         <!-- START SCROLL TO TOP  -->
 

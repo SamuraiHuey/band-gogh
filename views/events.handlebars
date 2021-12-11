@@ -6,6 +6,22 @@
                     <p>-----------</p>
                     <p>-----------</p>
                     <h2>UPCOMING CONCERTS</h2>
+
+
+                    <p class="subtitle" id="currentDay">Current Date:</p>
+                    
+                    <script>
+                        var ticker = setInterval(clock, 1000);
+                        
+                        function clock() {
+                            var date = dayjs().format('MM/DD/YYYY hh:mm:ssA');
+                            document.getElementById("currentDay").innerHTML = "Current date: " + date
+                        };
+                        clock()
+                    </script>
+
+
+
                     <div class="separator"></div>
                     <p><strong>Check out what shows are coming up in the Richmond area!</strong></p>
                     <div class="row d-flex justify-content-center">
@@ -21,8 +37,11 @@
                                         </div>
                                         <div class="col-sm-7 col-xs-7 no-padding">
                                             <div class="single_right_content">
-                                                <p class="subtitle">{{event.event_name}}</p>
-                                                <a class="events_icon" href=""><i class="fa fa-folder"></i>{{event.event_bands.genre_name}}</a>
+                                                <p class="subtitle">Event: {{event.event_name}}</p>
+                                                {{!-- <a class="events_icon" href=""><i
+                                                        class="fa fa-folder"></i>{{event.event_bands.genre_name}}</a>
+                                                --}}
+                                                <p>Location: {{event.event_location}}</p>
                                             </div>
                                         </div>
                                         <div class="col-sm-2 col-xs-2 no-padding">
