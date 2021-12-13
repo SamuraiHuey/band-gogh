@@ -9,6 +9,8 @@ Simply sign up, log in, and post your latest event!
 ## How does a new listener use the platform?
 Check out the events tab to see which local bands are playing at your Richmond venues!
 
+![image](https://user-images.githubusercontent.com/89109404/145738324-a26adb1d-d92a-4ead-b35c-5b1e3c68fa90.png)
+
 ## Plans for the future:
 Current plans for future development include
 - Calender feature for event dates per month.
